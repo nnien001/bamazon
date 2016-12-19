@@ -1,0 +1,27 @@
+{
+  "name": "bamazon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bamazonCustomer.js",
+  "dependencies": {
+    "inquirer": "^2.0.0",
+    "mysql": "^2.12.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nnien001/bamazon.git"
+  },
+  "keywords": [
+    "bamazon"
+  ],
+  "author": "natt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nnien001/bamazon/issues"
+  },
+  "homepage": "https://github.com/nnien001/bamazon#readme"
+}
