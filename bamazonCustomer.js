@@ -23,7 +23,23 @@ connection.connect(function(err) {
 
 function displayGoods() {
 	connection.query("SELECT item_id, product_name, price FROM products", function(err, res) {
-		console.log(res);
+		var filler = "                    "; //20 empty spaces
+		var s1 = "item_id" + filler;
+		var s2 = "product_name" + filler;
+		var s3 = "price" + filler;
+
+		//header
+		console.log(s1.substring(0, 20), s2.substring(0, 20), s3.substring(0, 20));
+		console.log("------------------------------------------------------------------");
+
+		for (var i = 0; i < res.length; i++) {
+			var itemOutput = res[i].item_id + filler;
+			var productOutput = res[i].product_name + filler;
+			var priceOutput = res[i].price.toString() + filler;
+
+			console.log(itemOutput.substring(0, 20), productOutput.substring(0, 20), priceOutput.substring(0, 20));
+		}
+
 		promptBuy();	
 	});
 }
